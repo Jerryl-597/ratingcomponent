@@ -1,0 +1,153 @@
+:root {
+  --clr-primary-1: hsl(25, 97%, 53%);
+  --clr-primary-2: hsl(215, 17%, 22%);
+  --clr-primary-3: hsl(217, 12%, 63%);
+  --clr-primary-4: hsl(213, 19%, 18%);
+  --clr-primary-5: hsl(216, 12%, 8%);
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.25s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--clr-primary-5);
+  line-height: 1.5;
+  font-size: 0.875rem;
+  overflow-x: hidden;
+}
+.main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.question {
+  background: var(--clr-primary-4);
+  max-width: 70%;
+  min-height: auto;
+  padding: 1.5rem 1rem;
+  border-radius: var(--radius);
+  margin-left: auto;
+  margin-right: auto;
+}
+.container {
+  height: 2rem;
+  width: 2rem;
+  background: var(--clr-primary-2);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+  color: var(--clr-primary-3);
+}
+.container:hover {
+  /* background: var(--clr-primary-3); */
+  color: #fff;
+}
+.image {
+  width: 50%;
+  height: 50%;
+  object-fit: contain;
+}
+h2 {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.info {
+  color: var(--clr-primary-3);
+  margin-bottom: 1rem;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 0;
+  border: transparent;
+  border-radius: 1.5rem;
+  transition: var(--transition);
+  background: var(--clr-primary-1);
+  color: #fff;
+  text-transform: uppercase;
+  transition: var(--transition);
+  margin-bottom: 0.5rem;
+}
+.btn:hover {
+  background: #fff;
+  color: var(--clr-primary-1);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+/* 
+===============
+Second Card Design
+===============
+*/
+.containerTwo {
+  margin-bottom: 1.5rem;
+  min-width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+}
+.imageTwo {
+  object-fit: contain;
+}
+.heading,
+.infoTwo {
+  text-align: center;
+}
+.report {
+  width: 75%;
+  padding: 0.5rem 0;
+  border: transparent;
+  border-radius: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-2);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* 
+===============
+Desktop View
+===============
+*/
+@media screen and (min-width: 425px) {
+  .question {
+    width: 25rem;
+  }
+}
+
+.newColor {
+  background: hsl(25, 97%, 53%);
+}
+.secondColor {
+  background: var(--clr-primary-2);
+}
+.hide {
+  display: none;
+}
